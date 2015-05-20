@@ -7,6 +7,16 @@ class DaysController < ApplicationController
     @days = Day.all
   end
 
+  def dashboard
+
+  end
+
+  def dashboard_data
+    @data = Day.all
+    render json: @data
+  end
+
+
   # GET /days/1
   # GET /days/1.json
   def show
